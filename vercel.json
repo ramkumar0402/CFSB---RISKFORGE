@@ -1,9 +1,12 @@
 {
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/backend/$1"
+    "experimentalServices": {
+        "frontend": {
+            "routePrefix": "/",
+            "framework": "vite"
+        },
+        "backend": {
+            "root": "backend",
+            "routePrefix": "/_/backend"
+        }
     }
-  ]
 }
